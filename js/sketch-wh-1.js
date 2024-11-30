@@ -1,4 +1,5 @@
 let time = 0;
+let hiya = cooked;
 let a = [0,0,0,0,true, true]
 let milliseconds = a[0];
 let seconds = a[1];
