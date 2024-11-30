@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HeatMap Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <div id="canvasHTML"></div>
+
+    <div id="controls">
+      <form>
+        <h1>HEATMAP</h1>
+        <p id="stopwatch"></p>
+        <input type="range" min="0" max="100" value="50" class="slider" id="controlsRange" list="values">
+        
+        <datalist id="values">
+          <option value="0" label="1 second"></option>
+          <option value="25" label=""></option>
+          <option value="50" label="1 minute"></option>
+          <option value="75" label=""></option>
+          <option value="100" label="2 minutes"></option>
+        </datalist>
+        <br><br>
+        <label for="html">Map Visibility</label>
+        <!-- <label class="switch">
+          <input type="checkbox" id="visibility" onclick="showHide()">
+          <span class="slider round"></span>
+        </label> -->
+        <input type="checkbox" id="visibility" name="map_vis" value="Visible" onclick="showHide()">
+        <br><br>
+        <a>Go to archive...</a>
+        <br><br>
+        <button id="save-image">Save Image</button>
+      </form>
+    </div>
+    
+    <script src="sketch.js"></script>
+    <script src="js/controls.js"></script>
+    
+  </body>
+</html>
