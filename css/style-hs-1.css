@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    position: relative;
+  }
+  
+  #control-panel {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  #toggle-heatmap {
+    margin-top: 10px;
+    padding: 5px 10px;
+  }
+  
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.5);
+    pointer-events: none;
+  }
+  
+  #map-canvas{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+  }

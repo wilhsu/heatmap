@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HeatMap Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style-wh-1.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/p5.fillgradient"></script>
+  </head>
+
+  <body>
+    <div id="canvasHTML"></div>
+
+    <div id="controls">
+      <form>
+        <h1>HeatMap</h1>
+        <p id="stopwatch"></p>
+        <div id="timeInt">pick a time interval:</div>
+        <br>
+        <label for="html">Map Visibility</label>
+        <input type="checkbox" id="visibility" name="map_vis" value="Visible" onclick="showHide()">
+        <br><br>
+        <a href="google.com">Go to archive...</a>
+        <br><br>
+        <button id="save-image">Save Image</button>
+      </form>
+    </div>
+    
+    <script src="js/sketch-wh-2.js"></script>
+  </body>
+</html>

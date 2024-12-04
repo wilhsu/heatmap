@@ -22,11 +22,7 @@ html, body {
 }
 
 #canvasHTML {
-  display: none;
-}
-
-#controlsRange{
-  width: 80%;
+  display: block;
 }
 
 /* slider pretty */
